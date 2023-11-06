@@ -2,7 +2,7 @@ import React from 'react';
 
 import css from './Filtering.module.css';
 
-export const Filtering = ({filter, handleInputFilter}) => {
+const Filtering = ({filter, handleInputFilter}) => {
   
     return (
         
@@ -15,3 +15,4 @@ export const Filtering = ({filter, handleInputFilter}) => {
     );
 
 }
+export default Filtering;

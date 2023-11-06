@@ -1,23 +1,21 @@
 
-import { Component } from 'react';
 import css from './ContactList.module.css';
 import { ContactItem } from 'components/ContactItem/ContactItem';
-export class ContactList extends Component {
+const ContactList = ({contacts, handleDeleteContacts}) => {
 
-  render() {
-  
   return (
       <div>
         
         <ul className={css.list}>
           
-            <ContactItem contacts={this.props.contacts} handleDeleteContacts={this.props.handleDeleteContacts}/>
+            <ContactItem contacts={contacts} handleDeleteContacts={handleDeleteContacts}/>
           
         </ul>
       </div>
   )
+
 }
-}
+export default ContactList;
     
     
 
